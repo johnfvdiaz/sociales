@@ -41,12 +41,30 @@
             width: 100%;
             bottom: 0;
         }
-        nav{
+        img {
+            width: 70px;
+            height: 90px;
+            transition: transform 0.3s ease-in-out;
             
+            cursor: pointer;
         }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+       
 
         /* Agrega estilos adicionales según tus necesidades */
     </style>
+    <script>
+        function cambiarImagen() {
+          document.getElementById('img').src = 'abrir.jpg';
+        }
+    
+        function restaurarImagen() {
+          document.getElementById('img').src = 'cerrar.jpg';
+        }
+      </script>
 </head>
 <body>
     <script src="botones.js"></script>
@@ -75,10 +93,10 @@
         <br>
         <br>
         <nav>
-            <button type="button" onclick="location.href='Sustentación_teórica.html'" onmouseover="reproducirGif()" onmouseout="pausarGif()"> 
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Seven_segment_display-animated.gif" width="30px" heigth="70px">
-            </button>
-            <button onclick="location.href='actividades.html'">Actividades</button>
+            <img title="Sustentación teórica" font-size="30px" id="img" src="C:\Users\Fernando\Documents\GitHub\sociales\cerrar.jpg" alt="IMG"  
+                onclick="location.href='Sustentación_teórica.html'" onmouseover="cambiarImagen()" onmouseout="restaurarImagen()">
+            <img id="img" src="C:\Users\Fernando\Documents\GitHub\sociales\cerrar.jpg" alt="IMG"  
+                onclick="location.href='Sustentación_teórica.html'" onmouseover="cambiarImagen()" onmouseout="restaurarImagen()">
  
           </nav>
     </main>
