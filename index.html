@@ -91,11 +91,14 @@
             visibility: visible;
             opacity: 1;
         }
+        
        
     </style>
     <script>
         function cambiarImagen1() {
-          document.getElementById('img1').src = 'abrir2.png';
+          var img = document.getElementById('img1').src = 'abrir2.png';
+             
+            img.style.heigth= '100px';
         }
     
         function restaurarImagen1() {
