@@ -83,12 +83,19 @@
        
     </style>
     <script>
-        function cambiarImagen() {
-          document.getElementById('img').src = 'abrir1.png';
+        function cambiarImagen1() {
+          document.getElementById('img1').src = 'abrir1.png';
         }
     
-        function restaurarImagen() {
-          document.getElementById('img').src = 'cerrar1.png';
+        function restaurarImagen1() {
+          document.getElementById('img1').src = 'cerrar1.png';
+        }
+        function cambiarImagen2() {
+          document.getElementById('img2').src = 'abrir2.png';
+        }
+    
+        function restaurarImagen2() {
+          document.getElementById('img2').src = 'cerrar3.png';
         }
       </script>
 </head>
@@ -111,13 +118,13 @@
         <br>
         <nav>
             <div class="tooltip">
-                <img id="img" src="cerrar1.png" alt="IMG"  
-                onclick="location.href='sustentacion_teorica.html'" onmouseover="cambiarImagen()" onmouseout="restaurarImagen()">
+                <img id="img1" src="cerrar1.png" alt="IMG"  
+                onclick="location.href='sustentacion_teorica.html'" onmouseover="cambiarImagen1()" onmouseout="restaurarImagen1()">
                 <div class="tooltiptext">Sustentación teórica</div>
             </div>
             <div class="tooltip">
-                <img  id="img" src="cerrar1.png" alt="IMG"  
-                onclick="location.href='actividades.html'" onmouseover="cambiarImagen()" onmouseout="restaurarImagen()">
+                <img  id="img2" src="cerrar2.png" alt="IMG"  
+                onclick="location.href='actividades.html'" onmouseover="cambiarImagen2()" onmouseout="restaurarImagen2()">
                 <div class="tooltiptext">Actividades</div>
             </div>
             
