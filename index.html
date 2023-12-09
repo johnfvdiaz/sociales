@@ -62,6 +62,17 @@
         #img2:hover {
             transform: scale(1.1);
         }
+        #img3 {
+            width: 170px;
+            height: 100px;
+            transition: transform 0.3s ease-in-out;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        #img3:hover {
+            transform: scale(1.1);
+        }
 
         .tooltip {
             position: relative;
@@ -100,17 +111,27 @@
             img.style.height= 'auto';
              img.style.width= 'auto';
         }
-    
         function restaurarImagen1() {
           var img = document.getElementById('img1').src = 'cerrar2.png';
             
         }
+
+        
         function cambiarImagen2() {
           document.getElementById('img2').src = 'joy2.png';
         }
     
         function restaurarImagen2() {
           document.getElementById('img2').src = 'joy1.png';
+        }
+
+        
+        function cambiarImagen3() {
+          document.getElementById('img3').src = 'abrir3.png';
+        }
+    
+        function restaurarImagen3() {
+          document.getElementById('img3').src = 'cerrar3.png';
         }
       </script>
 </head>
@@ -144,7 +165,13 @@
                 onclick="location.href='actividades.html'" onmouseover="cambiarImagen2()" onmouseout="restaurarImagen2()">
                 <div class="tooltiptext">Actividades</div>
             </div>
-            
+            <br>
+            <br>
+            <div class="tooltip">
+                <img  id="img3" src="cerrar3.png" alt="IMG"  
+                onclick="location.href='contenido.html'" onmouseover="cambiarImagen3()" onmouseout="restaurarImagen3()">
+                <div class="tooltiptext">Contenido</div>
+            </div>
 
 
           </nav> 
