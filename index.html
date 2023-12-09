@@ -42,8 +42,8 @@
             bottom: 0;
         }
         #img1 {
-            width: 70px;
-            height: 90px;
+            width: 100px;
+            height: 70px;
             transition: transform 0.3s ease-in-out;
             font-size: 30px;
             cursor: pointer;
@@ -95,11 +95,11 @@
     </style>
     <script>
         function cambiarImagen1() {
-          document.getElementById('img1').src = 'abrir1.png';
+          document.getElementById('img1').src = 'abrir2.png';
         }
     
         function restaurarImagen1() {
-          document.getElementById('img1').src = 'cerrar1.png';
+          document.getElementById('img1').src = 'cerrar2.png';
         }
         function cambiarImagen2() {
           document.getElementById('img2').src = 'abrir2.png';
@@ -129,7 +129,7 @@
         <br>
         <nav>
             <div class="tooltip">
-                <img id="img1" src="cerrar1.png" alt="IMG"  
+                <img id="img1" src="cerrar2.png" alt="IMG"  
                 onclick="location.href='sustentacion_teorica.html'" onmouseover="cambiarImagen1()" onmouseout="restaurarImagen1()">
                 <div class="tooltiptext">Sustentación teórica</div>
             </div>
