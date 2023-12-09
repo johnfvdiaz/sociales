@@ -40,7 +40,7 @@
             width: 100%;
             bottom: 0;
         }
-        img {
+        #img1 {
             width: 70px;
             height: 90px;
             transition: transform 0.3s ease-in-out;
@@ -48,7 +48,7 @@
             cursor: pointer;
         }
 
-        img:hover {
+        #img1:hover {
             transform: scale(1.1);
         }
 
@@ -83,12 +83,12 @@
         /* Agrega estilos adicionales según tus necesidades */
     </style>
     <script>
-        function cambiarImagen() {
-          document.getElementById('img').src = 'abrir.png';
+        function cambiarImagen1() {
+          document.getElementById('img1').src = 'abrir1.png';
         }
     
-        function restaurarImagen() {
-          document.getElementById('img').src = 'cerrar.png';
+        function restaurarImagen1() {
+          document.getElementById('img1').src = 'cerrar1.png';
         }
       </script>
 </head>
@@ -138,15 +138,11 @@ Afianzar, por medio de actividades didácticas, la temática dada a conocer.
         <br>
         <nav>
             <div class="tooltip">
-                <img font-size="30px" id="img" src="cerrar.png" alt="IMG"  
-                onclick="location.href='index.html'" onmouseover="cambiarImagen()" onmouseout="restaurarImagen()">
+                <img font-size="30px" id="img1" src="cerrar1.png" alt="IMG"  
+                onclick="location.href='index.html'" onmouseover="cambiarImagen1()" onmouseout="restaurarImagen1()">
                 <div class="tooltiptext">Index</div>
             </div>
-            <div class="tooltip">
-                <img  id="img" src="cerrar.png" alt="IMG"  
-                onclick="location.href='actividades.html'" onmouseover="cambiarImagen()" onmouseout="restaurarImagen()">
-                <div class="tooltiptext">Actividades</div>
-            </div>
+            
 
           </nav> 
     </main>
