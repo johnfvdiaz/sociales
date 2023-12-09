@@ -90,13 +90,20 @@ Afianzar, por medio de actividades didácticas, la temática dada a conocer.
         <br>
         <br>
         <br>
+        <br>
         <nav>
-            <button onclick="location.href='index.html'">Index</button>
-            <button onclick="location.href='#'">Botón 2</button>
-            <button onclick="location.href='#'">Botón 3</button>
-            <button onclick="location.href='#'">Botón 4</button>
-            <button onclick="location.href='#'">Botón 5</button>
-          </nav>
+            <div class="tooltip">
+                <img font-size="30px" id="img" src="cerrar.jpg" alt="IMG"  
+                onclick="location.href='index.html'" onmouseover="cambiarImagen()" onmouseout="restaurarImagen()">
+                <div class="tooltiptext">Index</div>
+            </div>
+            <div class="tooltip">
+                <img  id="img" src="cerrar.jpg" alt="IMG"  
+                onclick="location.href='actividades.html'" onmouseover="cambiarImagen()" onmouseout="restaurarImagen()">
+                <div class="tooltiptext">Actividades</div>
+            </div>
+
+          </nav> 
     </main>
 
     <footer>
