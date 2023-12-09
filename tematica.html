@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Karmatic Arcade" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/arcade-classic" rel="stylesheet">
+    <title>Socialess</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/arcade-classic');
+        
+        body {
+            background-image: url(asd1.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            font-family: 'ArcadeClassic', sans-serif;
+            font-size: 17px;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
 
+        header {
+            padding: 20px;
+            background-color: #333;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            padding: 10px;
+            background-color: #333;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+        #img1 {
+            
+            transition: transform 0.3s ease-in-out;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        #img1:hover {
+            transform: scale(1.1);
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 200px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -100px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+       
+    </style>
+    <script>
+        function cambiarImagen1() {
+          var img = document.getElementById('img1').src = 'abrir1.png';
+             
+            img.style.height= 'auto';
+             img.style.width= 'auto';
+        }
+        function restaurarImagen1() {
+          var img = document.getElementById('img1').src = 'cerrar1.png';
+            
+        }
+      </script>
+</head>
+<body>
+    <script src="botones.js"></script>
+
+    <header>
+        <h1>Didácticas de las Ciencias Sociales</h1>
+        
+    </header>
+
+    <main>
+       <h1>¿Qué son los derechos humanos?</h1>
+      <br>
+        <p align="center">¡Hola a todos! A continuación vamos a hablarles acerca de los derechos humanos, ¿alguna vez has oído sobre ellos?<br>
+            Los derechos humanos son como reglas especiales que nos ayudan a vivir felices y seguros. Imagina que estás jugando un juego con tus amigos,<br>
+            ¿verdad? Ahora, piensa en que todos tienen que seguir ciertas reglas para que el juego sea divertido y justo. Los derechos humanos son como esas<br>
+            reglas, pero para la vida real. Nos dicen que todos merecemos ser tratados con respeto, que debemos tener comida y agua, y que podemos decir lo que<br>
+            pensamos. Son como un escudo mágico que nos protege a todos, grandes y pequeños, para que podamos vivir en un mundo donde todos tenganoportunidades<br>
+            y se sientan importantes. Es como tener un superpoder que nos hace a todos superespeciales. ¡Así que recordar y respetar los derechos humanos es muy,<br>
+            muy importante para que todos podamos vivir felices y contentos!
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>¿Qué es la esclavitud?</h1>
+        <br>
+        <p align= "center">En tiempos antiguos, había algo llamado esclavitud, que era cuando una persona no tenía los mismos derechos importantes<br>
+            que tenemos hoy en día. Esto significaba que no podían decidir cosas sobre sus vidas, como lo hacemos nosotros. En esa época, era común que<br>
+            una persona pudiera ser considerada como propiedad de otra, y esa persona tenía todo el control sobre lo que le sucedía.Afortunadamente,<br>
+            hoy en día sabemos que eso no está bien, y todos merecemos ser tratados con respeto y tener la libertad de tomar nuestras propias decisiones.<br>
+        </p>
+        <br>
+        <h1>¡Importancia de los derechos humanos!</h1>
+        <br>
+        <p align= "center">Los derechos humanos son como reglas especiales que todos debemos seguir para asegurarnos de que cada persona sea tratada con respeto<br>
+            y justicia. Imagina que estás jugando un juego y hay reglas para que todos se diviertan y nadie salga lastimado. Los derechos humanos son como esas<br>
+            reglas, pero para la vida real. Todos, grandes y pequeños, tenemos derechos a ser tratados bien, a tener un hogar seguro, a aprender cosas nuevas y a<br>
+            decir lo que pensamos. Es importante respetar los derechos de los demás y recordar que todos somos diferentes pero igualmente valiosos.<br>
+            ¡Así es como creamos un mundo donde todos pueden vivir felices y seguros!            
+        </p>
+        <br>
+        <h1>¿cómo era la práctica de los derechos humanos en la época de la conquista?</h1>
+        <br>
+        <p>
+            
+        </p>
+        
+
+      
+        <nav>
+            <div class="tooltip">
+                <img id="img1" src="abrir1.png" width="200px" height= "70px" alt="IMG"  
+                onclick="location.href='index.html'" onmouseover="cambiarImagen1()" onmouseout="restaurarImagen1()">
+                <div class="tooltiptext">Index</div>
+            </div>
+       
+          </nav> 
+    </main>
+
+    <footer>
+        <p>&copy; 2023 John y Diana </p>
+    </footer>
+
+</body>
+</html>
