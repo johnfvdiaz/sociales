@@ -102,12 +102,18 @@
         <br>
         <br>
         <nav>
-            <button <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Seven_segment_display-animated.gif" onclick="location.href='index.html'">Index</button>
-            <button onclick="location.href='sustentacion_teorica.html'">Sustentación teórica</button>
-            <button onclick="location.href='#'">Botón 3</button>
-            <button onclick="location.href='#'">Botón 4</button>
-            <button onclick="location.href='#'">Botón 5</button>
-          </nav>
+            <div class="tooltip">
+                <img font-size="30px" id="img" src="cerrar.jpg" alt="IMG"  
+                onclick="location.href='index.html'" onmouseover="cambiarImagen()" onmouseout="restaurarImagen()">
+                <div class="tooltiptext">Index</div>
+            </div>
+            <div class="tooltip">
+                <img  id="img" src="cerrar.jpg" alt="IMG"  
+                onclick="location.href='actividades.html'" onmouseover="cambiarImagen()" onmouseout="restaurarImagen()">
+                <div class="tooltiptext">Actividades</div>
+            </div>
+
+          </nav> 
     </main>
 
     <footer>
