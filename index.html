@@ -74,6 +74,18 @@
             transform: scale(1.1);
         }
 
+        #img4 {
+            width: 170px;
+            height: 100px;
+            transition: transform 0.3s ease-in-out;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        #img4:hover {
+            transform: scale(1.1);
+        }
+
         .tooltip {
             position: relative;
             display: inline-block;
@@ -133,6 +145,15 @@
         function restaurarImagen3() {
           document.getElementById('img3').src = 'cerrar3.png';
         }
+
+        function cambiarImagen4() {
+          var img = document.getElementById('img4').src = 'carpeta1.png';
+       
+        }
+        function restaurarImagen4() {
+          var img = document.getElementById('img4').src = 'carpeta2.png';
+            
+        }
       </script>
 </head>
 <body>
@@ -171,6 +192,13 @@
                 <img  id="img3" src="cerrar3.png" alt="IMG"  
                 onclick="location.href='tematica.html'" onmouseover="cambiarImagen3()" onmouseout="restaurarImagen3()">
                 <div class="tooltiptext">Temática</div>
+            </div>
+            <br>
+            <br>
+            <div class="tooltip">
+                <img  id="img4" src="carpeta1.png" alt="IMG"  
+                onclick="location.href='bibliografia.html'" onmouseover="cambiarImagen4()" onmouseout="restaurarImagen4()">
+                <div class="tooltiptext">Bibliografía</div>
             </div>
 
 
