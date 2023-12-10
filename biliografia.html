@@ -1,1 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/arcade-classic" rel="stylesheet">
+    <title>Bibliografía</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/sigmar');
+        
+        /*'https://fonts.cdnfonts.com/css/arcade-classic'*/
+        body {
+            background-image: url(asd2.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            color: #fff;
+            font-family: 'Sigmar', sans-serif;
+            font-size: 17px;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
 
+        header {
+            padding: 20px;
+            background-color: #333;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            padding: 10px;
+            background-color: #333;
+        }
+        
+        #img1 {
+            width: 70px;
+            height: 90px;
+            transition: transform 0.3s ease-in-out;
+            
+            cursor: pointer;
+        }
+
+        #img1:hover {
+            transform: scale(1.1);
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 200px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -100px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* Agrega estilos adicionales según tus necesidades */
+    </style>
+    <script>
+        function cambiarImagen1() {
+          document.getElementById('img1').src = 'abrir1.png';
+        }
+    
+        function restaurarImagen1() {
+          document.getElementById('img1').src = 'cerrar1.png';
+        }
+      </script>
+</head>
+<body>
+
+    <header>
+       <h1>Teorías y Didácticas de las Ciencias Sociales</h1>
+
+    </header>
+
+    <main>
+        <h1>Bibliografía</h1>
+       <p>
+         Cataño Balseiro, C.L (2011). Jörn Rüsen y la conciencia histórica. Revista historia y sociedad, (21) 223-245. Tomado de: https://www.redalyc.org/pdf/3803/380370335008.pdf
+         <br>
+          Weissbrodt, D. (2002). La abolición de la esclavitud y sus formas contemporáneas. Tomado de: https://www.ohchr.org/sites/default/files/Documents/Publications/slaverysp.pdf
+         <br>
+          Banco República. (2018). Una breve narración de la esclavitud en Colombia. Tomado de:  https://www.banrepcultural.org/exposiciones/a-bordo-de-un-navio-esclavista-la-marie-seraphique/una-breve-narraci%C3%B3n-de-la-esclavitud-en-colombia
+         <br>
+          Archivo General de la nación. (2020). La esclavitud en Colombia: yugo y libertad. Tomado de:  https://www.archivogeneral.gov.co/exposicion_esclavitud_colombia#:~:text=La%20esclavitud%20ha%20sido%20una,con%20quienes%20capturaban%20como%20prisioneros
+         <br>
+          National Geographic. (S.f). Esclavitud. Tomado de:https://historia.nationalgeographic.com.es/temas/esclavitud
+         <br>
+          Arias, D. (2020). El arte del hacer en la enseñanza de las ciencias sociales y la historia. Pedagogía y Saberes, 52, 77–92. doi: https://doi.org/10.17227/pys.num52-10289
+         <br>
+          Caro Díaz. (2010). Esclavitud, una crueldad. Tomado de: https://redaprende.colombiaaprende.edu.co/recursos/colecciones/SQD6CSNXQ2E/DJSRYYP2C1C/19467
+         <br>
+          Rosari, H. (1996). La América española colonial siglos XVI - XVII. Pontificia Universidad Católica de Chile. Tomado de: https://www7.uc.cl/sw_educ/historia/america/html/2_2_1.html
+         <br>
+          Romero Jaramillo, Dolcey. (2001, julio 1). “Abolición de la esclavitud en Colombia”. Recuperado del sitio web Toda Colombia http://www.todacolombia.com/etnias/afrocolombianos/abolicionesclavitud.html
+         <br>
+       </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <nav>
+            <div class="tooltip">
+                <img font-size="30px" id="img1" src="cerrar1.png" alt="IMG"  
+                onclick="location.href='index.html'" onmouseover="cambiarImagen1()" onmouseout="restaurarImagen1()">
+                <div class="tooltiptext">Index</div>
+            </div>
+            
+
+          </nav> 
+    </main>
+
+    <footer>
+        <p>&copy; 2023 John y Diana </p>
+    </footer>
+
+</body>
+</html>
