@@ -88,6 +88,25 @@
         function restaurarImagen() {
           document.getElementById('img').src = 'cerrar1.png';
         }
+
+        function generarDocumento() {
+            // Obtener el texto ingresado por el usuario
+            var texto = document.getElementById("texto").value;
+
+            // Crear el contenido del documento HTML
+            var contenidoHTML = texto;
+
+            // Crear un Blob con el contenido HTML
+            var blob = new Blob([contenidoHTML], { type: 'application/msword' });
+
+            // Crear un enlace para descargar el archivo
+            var enlace = document.createElement('a');
+            enlace.href = URL.createObjectURL(blob);
+            enlace.download = 'documento_word.txt';
+
+            // Simular un clic en el enlace para iniciar la descarga
+            enlace.click();
+        }
       </script>
 </head>
 <body>
@@ -108,13 +127,22 @@
                 
             </iframe>
         </div>
+
+        <h2>Ingresar Texto</h2>
+    
+    <form id="wordForm">
+        <label for="texto">Texto:</label>
+        <textarea id="texto" name="texto" rows="4" cols="50"></textarea>
+        <br>
+        <input type="button" value="Generar Documento de Texto" onclick="generarDocumento()">
+    </form>
         <br>
         <br>
         <br>
         <br>
         <br>
         <nav>
-            <div class="tooltip">
+            <div align="right" class="tooltip">
                 <img font-size="30px" id="img" src="cerrar1.png" alt="IMG"  
                 onclick="location.href='index.html'" onmouseover="cambiarImagen()" onmouseout="restaurarImagen()">
                 <div class="tooltiptext">Index</div>
